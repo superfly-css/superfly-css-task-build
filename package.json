@@ -1,0 +1,40 @@
+{
+  "name": "superfly-css-task-build",
+  "version": "0.0.0",
+  "description": "Build task for superfly-css modules",
+  "main": "src/main/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superfly-css/superfly-css-task-build.git"
+  },
+  "keywords": [
+    "gulp",
+    "js",
+    "css",
+    "superfly-css",
+    "task",
+    "build"
+  ],
+  "author": "Ole Ersoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/superfly-css/superfly-css-task-build/issues"
+  },
+  "homepage": "https://github.com/superfly-css/superfly-css-task-build#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1",
+    "autoprefixer": "^6.1.0",
+    "postcss-calc": "^5.0.0",
+    "postcss-color-function": "^2.0.0",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-import": "^7.0.0",
+    "superfly-css-pli": "0.0.5"
+  },
+  "peerDependencies": {
+    "gulp": "3.x"
+  }
+}
