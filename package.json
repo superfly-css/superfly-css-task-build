@@ -1,6 +1,6 @@
 {
   "name": "superfly-css-task-build",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Build task for superfly-css modules",
   "main": "src/main/js/index.js",
   "scripts": {

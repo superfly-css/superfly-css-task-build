@@ -28,9 +28,7 @@ var stylelintConfig = {
     "number-no-trailing-zeros": 2,
     "property-no-vendor-prefix": 2,
     "rule-no-duplicate-properties": 2,
-    "rule-no-single-line": 2,
     "rule-trailing-semicolon": [2, "always"],
-    "selector-list-comma-newline-after": [2, "always-multi-line"],
     "selector-no-id": 2,
     "string-quotes": [2, "double"],
     "value-no-vendor-prefix": 2
