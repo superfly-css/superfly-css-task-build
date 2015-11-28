@@ -35,8 +35,7 @@ var stylelintConfig = {
   }
 };
 
-
-var processors = [stylelint(stylelintConfig), postcss_import, postcss_each, autoprefixer, postcss_calc, postcss_custom_properties, postcss_color_function, postcss_reporter({
+var processors = [stylelint(stylelintConfig), postcss_import, postcss_each, autoprefixer, postcss_custom_properties, postcss_calc, postcss_color_function, postcss_reporter({
   clearMessages: true
 })];
 
