@@ -25,7 +25,6 @@ var stylelintConfig = {
     "media-feature-name-no-vendor-prefix": 2,
     "no-multiple-empty-lines": 2,
     "number-leading-zero": [2, "always"],
-    "number-no-trailing-zeros": 2,
     "property-no-vendor-prefix": 2,
     "rule-no-duplicate-properties": 2,
     "rule-trailing-semicolon": [2, "always"],
