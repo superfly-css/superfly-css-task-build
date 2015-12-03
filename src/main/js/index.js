@@ -39,7 +39,11 @@ var processors = [stylelint(stylelintConfig), postcss_import, postcss_each, auto
 })];
 
 gulp.task('build:css', function() {
-  return gulp.src(PLI.SRC_MAIN_CSS)
+  gulp.src(PLI.SRC_MAIN_CSS)
     .pipe(postcss(processors))
     .pipe(gulp.dest(PLI.target.main.css));
+
+  return gulp.src(PLI.SRC_TEST_CSS)
+    .pipe(postcss(processors))
+    .pipe(gulp.dest(PLI.target.test.css));
 });
