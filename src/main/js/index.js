@@ -8,6 +8,7 @@ var postcss_each = require('postcss-each');
 var postcss_reporter = require('postcss-reporter');
 var autoprefixer = require('autoprefixer');
 var stylelint = require('stylelint');
+var styleline_config = require('stylelint-config-standard');
 
 var PLI = require('superfly-css-pli');
 
@@ -34,7 +35,7 @@ var stylelintConfig = {
   }
 };
 
-var processors = [stylelint(stylelintConfig), postcss_import, postcss_each, autoprefixer, postcss_custom_properties, postcss_calc, postcss_color_function, postcss_reporter({
+var processors = [stylelint(styleline_config), postcss_import, postcss_each, autoprefixer, postcss_custom_properties, postcss_calc, postcss_color_function, postcss_reporter({
   clearMessages: true
 })];
 
