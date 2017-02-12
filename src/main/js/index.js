@@ -8,34 +8,12 @@ var postcss_each = require('postcss-each');
 var postcss_reporter = require('postcss-reporter');
 var autoprefixer = require('autoprefixer');
 var stylelint = require('stylelint');
-var styleline_config = require('stylelint-config-standard');
+var stylelint_config = require('stylelint-config-standard');
 
 var PLI = require('superfly-css-pli');
 
-// Stylelint configuration
-var stylelintConfig = {
-  "rules": {
-    "block-no-empty": 2,
-    "color-no-invalid-hex": 2,
-    "declaration-colon-space-after": [2, "always"],
-    "declaration-colon-space-before": [2, "never"],
-    "function-comma-space-after": [2, "always"],
-    "function-url-quotes": [2, "double"],
-    "media-feature-colon-space-after": [2, "always"],
-    "media-feature-colon-space-before": [2, "never"],
-    "media-feature-name-no-vendor-prefix": 2,
-    "no-multiple-empty-lines": 2,
-    "number-leading-zero": [2, "always"],
-    "property-no-vendor-prefix": 2,
-    "rule-no-duplicate-properties": 2,
-    "rule-trailing-semicolon": [2, "always"],
-    "selector-no-id": 2,
-    "string-quotes": [2, "double"],
-    "value-no-vendor-prefix": 2
-  }
-};
 
-var processors = [stylelint(styleline_config), postcss_import, postcss_each, autoprefixer, postcss_custom_properties, postcss_calc, postcss_color_function, postcss_reporter({
+var processors = [stylelint(stylelint_config), postcss_import, postcss_each, autoprefixer, postcss_custom_properties, postcss_calc, postcss_color_function, postcss_reporter({
   clearMessages: true
 })];
 
