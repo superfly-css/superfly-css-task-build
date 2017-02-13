@@ -10,7 +10,7 @@ var autoprefixer = require('autoprefixer');
 
 var PLI = require('superfly-css-pli');
 
-var processors = [postcss_import, postcss_each, autoprefixer, postcss_custom_properties, postcss_calc, postcss_color_function, postcss_reporter({
+var processors = [postcss_import, postcss_each, postcss_custom_properties, postcss_calc, postcss_color_function, autoprefixer, postcss_reporter({
   clearMessages: true
 })];
 
