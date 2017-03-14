@@ -11,6 +11,8 @@ var pc_reporter = require('postcss-reporter');
 var pc_custom_media = require('postcss-custom-media');
 var autoprefixer = require('autoprefixer');
 
+var purify = require('gulp-purifycss');
+
 var PLI = require('superfly-css-pli');
 
 var processors = [pc_import, pc_each, pc_for, pc_custom_properties, pc_apply, pc_calc, pc_color_function, pc_custom_media, autoprefixer, pc_reporter({
@@ -24,5 +26,6 @@ gulp.task('build:css', function() {
 
   return gulp.src(PLI.SRC_TEST_CSS)
     .pipe(pc(processors))
+    .pipe(purify([PLI.SRC_TEST_HTML]))
     .pipe(gulp.dest(PLI.target.test.css));
 });
