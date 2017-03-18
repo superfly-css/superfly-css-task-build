@@ -1,6 +1,6 @@
 {
   "name": "superfly-css-task-build",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "description": "Build task for superfly-css modules",
   "main": "src/main/js/index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   "dependencies": {
     "autoprefixer": "^6.7.2",
     "gulp-postcss": "^6.3.0",
-    "gulp-purifycss": "^0.2.0",
+    "gulp-uncss": "^1.0.6",
     "postcss-apply": "^0.5.0",
     "postcss-calc": "^5.3.1",
     "postcss-color-function": "^3.0.0",
