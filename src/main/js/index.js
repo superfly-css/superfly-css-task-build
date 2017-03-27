@@ -9,11 +9,12 @@ var pc_for = require('postcss-for');
 var pc_apply = require('postcss-apply');
 var pc_reporter = require('postcss-reporter');
 var pc_custom_media = require('postcss-custom-media');
+var pc_font_magician = require('postcss-font-magician');
 var autoprefixer = require('autoprefixer');
 
 var PLI = require('superfly-css-pli');
 
-var processors = [pc_import, pc_each, pc_for, pc_custom_properties, pc_apply, pc_calc, pc_color_function, pc_custom_media, autoprefixer, pc_reporter({
+var processors = [pc_import, pc_each, pc_for, pc_custom_properties, pc_apply, pc_calc, pc_color_function, pc_custom_media, pc_font_magician, autoprefixer, pc_reporter({
   clearMessages: true
 })];
 
