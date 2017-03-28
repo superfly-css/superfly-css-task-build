@@ -1,6 +1,6 @@
 {
   "name": "superfly-css-task-build",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Build task for superfly-css modules",
   "main": "src/main/js/index.js",
   "scripts": {
@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/superfly-css/superfly-css-task-build#readme",
   "dependencies": {
-    "autoprefixer": "^6.7.2",
-    "gulp-postcss": "^6.3.0",
-    "postcss-apply": "^0.5.0",
+    "autoprefixer": "^6.7.7",
+    "gulp-postcss": "^6.4.0",
+    "postcss-apply": "^0.6.1",
     "postcss-calc": "^5.3.1",
     "postcss-color-function": "^3.0.0",
     "postcss-custom-media": "^5.0.1",
@@ -37,7 +37,8 @@
     "postcss-for": "^2.1.1",
     "postcss-import": "^9.1.0",
     "postcss-reporter": "^3.0.0",
-    "superfly-css-pli": "0.0.7"
+    "postcss-sass-color-functions": "^1.1.0",
+    "superfly-css-pli": "0.0.9"
   },
   "peerDependencies": {
     "gulp": "3.x"
